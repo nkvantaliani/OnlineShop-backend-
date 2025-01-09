@@ -1,0 +1,25 @@
+<title>Create</title>
+{% extends "base.html" %}
+{% block body %}
+<form method="post" enctype="multipart/form-data">
+    {{form.hidden_tag()}}
+    <div class="text-center mt-5">
+        <h2>Create Product</h2>
+        <div class="mb-3">
+
+            {{ form.img(placeholder =form.img.label.text)}}
+        </div>
+        <div class="mb-3">
+
+            {{ form.name(placeholder =form.name.label.text)}}
+        </div>
+        <div class="mb-3">
+
+            {{ form.price(placeholder =form.price.label.text)}}
+        </div>
+        <div class="mb-3">
+            {{ form.submit}}
+        </div>
+    </div>
+</form>
+{% endblock %}
