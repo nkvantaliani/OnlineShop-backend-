@@ -35,8 +35,6 @@ class User(db.Model, BaseModel,UserMixin):
 def load_user(user_id):
    return User.query.get(user_id)
 
-class Post(db.Model, BaseModel):
-    __tablename__ = "posts"
 
     id = db.Column(db.Integer(), primary_key=True)
     title = db.Column(db.String(), nullable=False )
