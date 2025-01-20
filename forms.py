@@ -23,7 +23,3 @@ class ProductForm(FlaskForm):
     price = IntegerField("Enter product price",validators=[DataRequired()])
     submit = SubmitField()
 
-class PostForm(FlaskForm):
-    title = StringField('Enter post title')
-    content = StringField('enter post')
-    submit = SubmitField()
